@@ -15,7 +15,7 @@ git clone https://github.com/ridrogo/ModeradorBot.git
 ```
 ```bash
 # Mover a directorio y cambiar permisos de arranque
-cd ModeradorBot && chmod +x launch.sh
+cd ModeradorBot && chmod +x install.sh
 ```
 Instalar ModeradorBot Beta: 
 
