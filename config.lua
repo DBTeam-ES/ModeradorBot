@@ -1,5 +1,5 @@
 return {
-	bot_api_key = "363154736:AAEPK9FmkYqocczNeXlPjq4FW-e4MGbcCB8", --Please add your bot api key here!
+	bot_api_key = "TU TOKEN AQUI", --Please add your bot api key here!
 	google_key = 'AIzaSyDCDFIeCsP-Oi6APxskvCP0TbCih5GXxGA',
 	google_key2 = 'AIzaSyAQoLkk06FOxI3pl0pYZSgfY2pfatmQ7_Y',
 	google_key3 = 'AIzaSyACtE_2S8rftpJ_vwxfiUzZr6MqE5u1bLI',
