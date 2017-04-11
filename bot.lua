@@ -451,22 +451,6 @@ while is_started do -- Start a loop while the bot should be running.
 	else
 		print('Connection error')
 	end
-	if last_cron ~= os.date('%H') then -- Run cron jobs every hour.
-		last_cron = os.date('%H')
-		last.h = current.h
-		current.h = 0
-		for i,v in ipairs(plugins) do
-			if v.cron then -- Call each plugin's cron function, if it has one.
-				os.execute('curl -so /tmp/gbans.txt https://linuxlatbot.tk/cplist.confirmed.lua2.txt')
-				io.popen('mv /tmp/gbans.txt /tmp/pfilos.lua && cp /tmp/pfilos.lua /root/GBesp/data/')
-				local res, err = pcall(v.cron)
-				if not res then
-          			api.sendLog('An #error occurred (cron).\n'..err)
-					return
-				end
-			end
-		end
-	end
 end
 
 print('Halted.\n')
